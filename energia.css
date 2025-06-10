@@ -1,3 +1,4 @@
+
 .cabecalho{
     color: white;
     background-color: black;
@@ -7,4 +8,51 @@
 
 .cabecalho h3{
     color: rgb(206, 206, 8);
+}
+.texto-central {
+  padding: 30px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.imagem-central {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.imagem-central img {
+  width: 400px;
+  height: auto;
+}
+
+.bloco-inferior {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* ou menos, tipo 10px */
+  padding: 20px 50px;
+}
+
+.bloco-inferior .texto-esquerda {
+  flex: 2;
+  font-size: 16px;
+}
+
+.bloco-inferior .imagem-direita {
+  flex: 1;
+  text-align: right;
+}
+
+.bloco-inferior .imagem-direita img {
+  width: 200px;
+  height: auto;
+}
+.img-card{
+    max-height: 250px;
+}
+.footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 5px;
 }
