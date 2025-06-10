@@ -1,7 +1,7 @@
 
 .cabecalho{
     color: white;
-    background-color: black;
+    background-color: rgb(2, 66, 24);
     text-align: center;
     padding: 30px;
 }
@@ -50,9 +50,10 @@
 .img-card{
     max-height: 250px;
 }
-.footer{
+footer{
     background-color: black;
     color: white;
     text-align: center;
     padding: 5px;
+    
 }
