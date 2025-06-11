@@ -8,4 +8,78 @@
 .cabecalho h3{
     color: rgb(206, 206, 8);
 }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+.secao {
+  display: flex;
+  align-items: center;
+  padding: 40px 10%;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.secao img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.texto {
+  flex: 1;
+  min-width: 300px;
+}
+
+.imagem {
+  flex: 1;
+  min-width: 300px;
+  text-align: center;
+}
+
+/* Seção 2: texto com imagem centralizada abaixo */
+.centralizada {
+  display: block;
+  text-align: center;
+}
+
+.centralizada .texto {
+  margin-bottom: 20px;
+}
+
+.centralizada .imagem-central {
+  display: flex;
+  justify-content: center;
+}
+
+/* Para seções lado-direito e lado-esquerdo */
+.lado-direito {
+  flex-direction: row;
+}
+
+.lado-esquerdo {
+  flex-direction: row-reverse;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .secao {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .lado-esquerdo,
+  .lado-direito {
+    flex-direction: column;
+  }
+}
+.footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
 

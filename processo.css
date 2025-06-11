@@ -8,3 +8,108 @@
 .cabecalho h3{
     color: rgb(206, 206, 8);
 }
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+header {
+  background-color: #006699;
+  color: white;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.secao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 10%;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.secao img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.secao .texto {
+  flex: 1;
+  min-width: 280px;
+}
+
+.esquerda-img {
+  flex-direction: row;
+}
+
+.direita-img {
+  flex-direction: row-reverse;
+}
+
+.central {
+  flex-direction: column;
+  text-align: center;
+}
+
+.central img {
+  margin-top: 20px;
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/* Cards */
+.cards {
+  background-color: #f5f5f5;
+  padding: 60px 10%;
+  text-align: center;
+}
+
+.titulo-cards {
+  font-size: 28px;
+  margin-bottom: 40px;
+}
+
+.container-cards {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  flex: 1;
+  min-width: 240px;
+  max-width: 300px;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .esquerda-img,
+  .direita-img {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .container-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}

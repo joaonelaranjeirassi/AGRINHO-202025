@@ -14,26 +14,115 @@ body{
 .cabecalho h3{
     color: rgb(206, 206, 8);
 }
-
-p .alinha{
-    text-align: right;
-}
-.img-agro{
-    width: 300px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.br-3{
-    border-radius: 15px;
+body, html {
+  font-family: 'Segoe UI', sans-serif;
+  color: #fff;
 }
 
-.img-card{
-    max-height: 250px;
+/* Banner de abertura */
+.banner {
+  background-image: url('https://images.unsplash.com/photo-1518779578993-ec3579fee39f?auto=format&fit=crop&w=1470&q=80');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
-.img-slide{
-    max-height: 400px;
+.banner-conteudo {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 40px;
+  border-radius: 10px;
 }
 
+.banner h1 {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.banner p {
+  font-size: 20px;
+}
+
+/* Blocos de informações */
+.blocos {
+  display: flex;
+  justify-content: space-around;
+  background-color: #111;
+  padding: 60px 10%;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.bloco {
+  background-color: #222;
+  padding: 30px;
+  border-radius: 10px;
+  flex: 1;
+  min-width: 250px;
+  max-width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.bloco img {
+  width: 60px;
+  margin-bottom: 20px;
+}
+
+.bloco:hover {
+  transform: translateY(-10px);
+}
+
+/* Parallax com texto centralizado */
+.parallax {
+  background-image: url('https://images.unsplash.com/photo-1581090700227-1e8e00c849b5?auto=format&fit=crop&w=1470&q=80');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.parallax-conteudo {
+  background-color: rgba(0, 0, 0, 0.6);
+  display: inline-block;
+  padding: 40px 60px;
+  border-radius: 12px;
+}
+
+.parallax h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.parallax p {
+  font-size: 18px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .banner h1 {
+    font-size: 32px;
+  }
+
+  .blocos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .parallax-conteudo {
+    padding: 30px;
+  }
+}
 .footer{
     background-color: black;
     color: white;
