@@ -1,6 +1,6 @@
 .cabecalho{
     color: white;
-    background-color: black;
+    background-color: #024218;
     text-align: center;
     padding: 30px;
 }
@@ -24,9 +24,8 @@ body {
 }
 
 .secao img {
-  max-width: 100%;
+  width: 350px;
   height: auto;
-  border-radius: 8px;
 }
 
 .texto {
@@ -36,10 +35,19 @@ body {
 
 .imagem {
   flex: 1;
-  min-width: 300px;
+  min-width: 200px;
   text-align: center;
 }
+.imagem-central {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
 
+.imagem-central img {
+  width: 400px;
+  height: auto;
+}
 /* Seção 2: texto com imagem centralizada abaixo */
 .centralizada {
   display: block;
